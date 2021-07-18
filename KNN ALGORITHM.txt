@@ -1,0 +1,18 @@
+STEPS
+1. SPLIT GIVEN DATA INTO
+TRAINING AND VALIDATION DATA, max = 0, maxk = 0
+2. for k in range(1,100,2)
+	correct = 0
+	total = len(val_data)
+3.  for each point p in val_data
+4.   find distances of p from train
+  data
+5.   sort the distances
+6.   find k nearest neighbors
+7.   determine predicted class
+8.   compare with actual class
+9.   if correct then correct+=1
+10. accuracy = correct*100/total
+11. if accuracy>max then max = accuracy and maxk = k
+12.END
+
